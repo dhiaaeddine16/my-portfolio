@@ -71,12 +71,7 @@ const Header = (props: { finishedLoading: boolean; sectionsRef: any }) => {
     };
   }, [sharedState]);
 
-  // Ensure the document body scrolls properly when rotating
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      rotate ? (document.body.style.overflow = "hidden") : (document.body.style.overflow = "auto");
-    }
-  }, [rotate]);
+  
 
   // Delaying the show of the header once finished loading
   useEffect(() => {
