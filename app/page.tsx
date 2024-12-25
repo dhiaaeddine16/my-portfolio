@@ -10,6 +10,7 @@ import Head from "next/head";
 import dynamic from 'next/dynamic';
 import MyName from "./components/Home/MyName/MyName";
 import SocialMediaArround from "./components/Home/SocialMediaArround/SocialMediaArround";
+import Skills from "./components/Home/Skills/Skills";
 
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
@@ -99,7 +100,8 @@ export default function Home() {
         <Header finishedLoading={context?.sharedState.finishedLoading ?? false} sectionsRef={homeRef} />
         <MyName finishedLoading={context?.sharedState.finishedLoading} />
         <SocialMediaArround finishedLoading={context?.sharedState.finishedLoading} />
-        
+        {context?.sharedState.finishedLoading ? <Skills/>  : <></>}
+         
       </div>
     </>
   );
