@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import Logo from "./Headercomp/Logo";
-import DesktopMenu from "./Headercomp/DesktopMenu";
-import IconMenu from "./Headercomp/IconMenu";
-import MobileMenu from "./Headercomp/MobileMenu";
+import DesktopMenu from "./Headercomp/Desktop/DesktopMenu";
+import IconMenu from "./Headercomp/Mobile/IconMenu";
+import MobileMenu from "./Headercomp/Mobile/MobileMenu";
 import { motion } from "framer-motion";
 import AppContext from "../AppContextFolder/AppContext"; // Adjust path to AppContext
 
@@ -104,7 +104,7 @@ const Header = (props: { finishedLoading: boolean; sectionsRef: any }) => {
         {/* Logo A */}
         <Logo finishedLoading={props.finishedLoading} />
 
-        {/* Icon Menu */}
+        {/*Mobile Icon Menu */}
         <IconMenu
           rotate={rotate}
           setRotate={setRotate}

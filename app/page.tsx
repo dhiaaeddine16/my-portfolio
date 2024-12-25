@@ -8,6 +8,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import dynamic from 'next/dynamic';
+import MyName from "./components/Home/MyName/MyName";
+import SocialMediaArround from "./components/Home/SocialMediaArround/SocialMediaArround";
 
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
@@ -95,6 +97,8 @@ export default function Home() {
         {context?.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>}
         {context?.sharedState.finishedLoading ? <></> : ShowElement ? <Startup /> : <></>}
         <Header finishedLoading={context?.sharedState.finishedLoading ?? false} sectionsRef={homeRef} />
+        <MyName finishedLoading={context?.sharedState.finishedLoading} />
+        <SocialMediaArround finishedLoading={context?.sharedState.finishedLoading} />
         
       </div>
     </>
