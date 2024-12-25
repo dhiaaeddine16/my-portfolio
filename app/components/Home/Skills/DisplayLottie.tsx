@@ -14,7 +14,7 @@ const GreetingLottie = ({ animationPath }: Props) => {
 
   return (
     <div onClick={() => null}>
-      {/* @ts-ignore */}
+      {/*@ts-expect-error*/}
       <Lottie options={defaultOptions} />
     </div>
   );

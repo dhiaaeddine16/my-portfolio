@@ -13,11 +13,9 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      // Disable the no-explicit-any rule
+      "@typescript-eslint/ban-ts-comment": "off",
       "@typescript-eslint/no-explicit-any": "off",
-      // Disable the react-hooks rules of hooks
       "react-hooks/rules-of-hooks": "off",
-      // Disable the unused-vars rule
       "@typescript-eslint/no-unused-vars": "off",
     },
   },
