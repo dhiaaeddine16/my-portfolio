@@ -64,8 +64,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         className="text-AAsecondary"
       >
-        <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-        &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Work</span>
+        <ReactScrollLink to="ProjectsSection" spy={true} smooth={true} offset={-100} duration={200}>
+        &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Projects</span>
 
         </ReactScrollLink>
         

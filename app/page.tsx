@@ -11,6 +11,7 @@ import dynamic from 'next/dynamic';
 import MyName from "./components/Home/MyName/MyName";
 import SocialMediaArround from "./components/Home/SocialMediaArround/SocialMediaArround";
 import Skills from "./components/Home/Skills/Skills";
+import Projects from "./components/Home/Projects/Projects";
 
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
@@ -101,6 +102,7 @@ export default function Home() {
         <MyName finishedLoading={context?.sharedState.finishedLoading} />
         <SocialMediaArround finishedLoading={context?.sharedState.finishedLoading} />
         {context?.sharedState.finishedLoading ? <Skills/>  : <></>}
+        {context?.sharedState.finishedLoading ? <Projects /> : <></>}
          
       </div>
     </>

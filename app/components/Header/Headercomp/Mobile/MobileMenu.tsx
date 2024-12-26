@@ -56,7 +56,7 @@ const MobileMenu = (props: { setRotate: (arg0: boolean) => void; rotate: any; se
             </span>
           </Link>
           <Link
-            to="SomethingIveBuiltSection"
+            to="ProjectsSection"
             spy={true}
             smooth={true}
             offset={100}
@@ -69,7 +69,7 @@ const MobileMenu = (props: { setRotate: (arg0: boolean) => void; rotate: any; se
               className="text-white font-Text2 text-sm sm:text-base
              hover:text-AAsecondary hover:cursor-pointer duration-300"
             >
-              Work
+              Projects
             </span>
           </Link>
           <Link

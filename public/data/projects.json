@@ -1,0 +1,27 @@
+[
+    {
+      "image": "/img/ensvision.jpg",
+      "url": "https://www.vision.io",
+      "name": "ENS names Marketplace",
+      "description": "At Vision, I played a crucial role in developing web3 components for their web3 application using Next.js and web3 libraries.",
+      "techStack": ["ENS domains", "web3", "NFT", "ERC72"],
+      "projectUrl": "https://www.vision.io"
+    },
+    {
+      "image": "/img/typing.png",
+      "url": "/typing",
+      "name": "Speed Typing",
+      "description": "This project aims to help you improve your typing speed and accuracy with stats tracking each round.",
+      "techStack": ["Algorithms", "Framer Motion", "Tailwind CSS", "TypeScript"],
+      "projectUrl": "/typing"
+    },
+    {
+      "image": "/img/hackme.jpg",
+      "url": "/userdatapuller",
+      "name": "User Data Puller",
+      "description": "This project helps you understand how websites track your browser based on your location, IP, and other data.",
+      "techStack": ["Cookies", "Google API", "Data collection", "IP Address", "Location"],
+      "projectUrl": "/userdatapuller"
+    }
+  ]
+  

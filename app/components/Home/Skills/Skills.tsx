@@ -69,7 +69,7 @@ export const skillsSection: any = {
 
 const Skills = () => {
   return (
-    <div id="skillsSection" data-aos="fade-up" className="snap-start flex flex-col items-center bg-AAprimary  lg:px-60" >
+    <div id="skillsSection" data-aos="fade-up" className="snap-start flex flex-col items-center bg-AAprimary px-4 lg:px-60" >
       <div className="flexflex-row items-center px-4 sm:px-0 w-full sm:w-[500px] md:w-[700px] lg:w-[900px]">
           <div className="flex flex-row items-center mrx-4">
             <ArrowIcon className="flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary" />
