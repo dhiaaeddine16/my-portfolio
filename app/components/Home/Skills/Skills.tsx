@@ -69,29 +69,32 @@ export const skillsSection: any = {
 
 const Skills = () => {
   return (
-    <div id="skillsSection" data-aos="fade-up" className="snap-start flex flex-col items-center bg-AAprimary px-4 lg:px-60" >
-      <div className="flexflex-row items-center px-4 sm:px-0 w-full sm:w-[500px] md:w-[700px] lg:w-[900px]">
-          <div className="flex flex-row items-center mrx-4">
-            <ArrowIcon className="flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary" />
-            <span className="text-AAsecondary font-Header text-sm sm:text-xl"> 01.</span>
-            <span className="flex-none text-gray-200 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
-              Skills
+    <div id="skillsSection" data-aos="fade-up" 
+        className="flex flex-col w-full items-center bg-AAprimary px-4" >
+      <div data-aos="fade-up" className="flex flex-row items-center md:px-0">
+          <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-AAsecondary" />
+          <div className="flex-none flex-row space-x-2 items-center pr-2">
+            <span className="text-AAsecondary font-sans text-sm sm:text-xl">01.</span>
+            <span className="font-bold tracking-wider text-gray-200 text-lg md:text-2xl w-44 md:w-56 opacity-85">
+                  Skills
             </span>
           </div>
-        
+        <div className="bg-gray-400 h-[0.2px] w-full xl:w-1/3 md:w-1/2"></div>
       </div>
 
       {/* // ? Skills Details */}
       <div className="w-full flex flex-col mt-8 sm:mt-16 sm:px-0 md:px-10 lg:px-20">
         {skillsSection.data.map((section: any, index: any) => (
           <div key={index} className="w-full flex flex-col md:flex-row items-center">
+            <div className="hidden lg:flex relative w-full lg:w-1/12 justify-center">
+            </div>
             {/* // ? Lottie Animation */}
-            <div className="relative w-full md:w-5/12 flex justify-center mb-8 md:mb-0">
+            <div className="relative w-full md:w-6/12 lg:w-5/12 flex justify-center">
               <DisplayLottie animationPath={section.lottieAnimationFile} />
             </div>
 
             {/* // ? Skills and Software Skills */}
-            <div className="w-full md:w-6/12  flex flex-col space-y-1 items-start">
+            <div className="w-full md:w-6/12 lg:w-6/12 flex flex-col space-y-1 items-start">
               {/* Skills List */}
               <div className="space-y-1">
                 {section.skills.map((skill: any, i: any) => (

@@ -1,27 +1,21 @@
 [
-    {
-      "image": "/img/ensvision.jpg",
-      "url": "https://www.vision.io",
-      "name": "ENS names Marketplace",
-      "description": "At Vision, I played a crucial role in developing web3 components for their web3 application using Next.js and web3 libraries.",
-      "techStack": ["ENS domains", "web3", "NFT", "ERC72"],
-      "projectUrl": "https://www.vision.io"
-    },
-    {
-      "image": "/img/typing.png",
-      "url": "/typing",
-      "name": "Speed Typing",
-      "description": "This project aims to help you improve your typing speed and accuracy with stats tracking each round.",
-      "techStack": ["Algorithms", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      "projectUrl": "/typing"
-    },
-    {
-      "image": "/img/hackme.jpg",
-      "url": "/userdatapuller",
-      "name": "User Data Puller",
-      "description": "This project helps you understand how websites track your browser based on your location, IP, and other data.",
-      "techStack": ["Cookies", "Google API", "Data collection", "IP Address", "Location"],
-      "projectUrl": "/userdatapuller"
-    }
-  ]
   
+  {
+    "imageSrc": "/img/hackme.jpg",
+    "projectType": "My Project",
+    "projectName": "User Data puller",
+    "projectLink": "https://www.anaflous.com/userdatapuller",
+    "description": "This project allows you to understand how easy it is to identify and track your browser based on how it appears to websites. Such as your <span className='text-AAsecondary'> location</span>,{' '} <span className='text-AAsecondary'>IP Address</span>,{' '} <span className='text-AAsecondary'>{','} software, Hardware</span> and some additional information with the help of cookies.",
+    "technologies": ["Cookies","Google APi","Data collecting","IP Address","Location"],
+    "githubLink": "https://github.com/dhiaaeddine16"
+  },
+  {
+    "imageSrc": "/img/typing.png",
+    "projectType": "My Project",
+    "projectName": "Speed Typing",
+    "projectLink": "https://www.anaflous.com/typing",
+    "description": "This project aim to help you to improve your <span className='text-AAsecondary'> typing </span> by tracking your progress in <span className='text-AAsecondary'> each round</span> and give you a{' '} <span className='text-AAsecondary'> score</span> based on your typing speed and accuracy through a table of <span className='text-AAsecondary'> statistics</span>.",
+    "technologies": ["Algorithms","Framer Motion","Tailwind CSS","TypeScript"],
+    "githubLink": null
+  }
+]

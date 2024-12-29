@@ -1,7 +1,6 @@
-const ExternalLink = (props: { router: any; url: string }) => {
+const ExternalLink = () => {
     return (
       <svg
-        onClick={() => props.router.push(props.url)}
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         viewBox="0 0 24 24"
