@@ -12,6 +12,8 @@ import MyName from "./components/Home/MyName/MyName";
 import SocialMediaArround from "./components/Home/SocialMediaArround/SocialMediaArround";
 import Skills from "./components/Home/Skills/Skills";
 import Projects from "./components/Home/Projects/Projects";
+import Contact from "./components/Home/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
@@ -103,6 +105,8 @@ export default function Home() {
         <SocialMediaArround finishedLoading={context?.sharedState.finishedLoading} />
         {context?.sharedState.finishedLoading ? <Skills/>  : <></>}
         {context?.sharedState.finishedLoading ? <Projects /> : <></>}
+        {context?.sharedState.finishedLoading ? <Contact/> : <></>}
+        {context?.sharedState.finishedLoading ? <Footer/> : <></>}
          
       </div>
     </>

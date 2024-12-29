@@ -73,7 +73,7 @@ const MobileMenu = (props: { setRotate: (arg0: boolean) => void; rotate: any; se
             </span>
           </Link>
           <Link
-            to="GetInTouchSection"
+            to="ContactSection"
             spy={true}
             smooth={true}
             offset={100}
